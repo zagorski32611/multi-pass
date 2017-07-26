@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'personal/index'
+
   resources :personal
+  get 'personal/index'
   get 'welcome/index'
   root 'welcome#index'
 
